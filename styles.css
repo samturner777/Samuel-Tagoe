@@ -356,6 +356,25 @@ button { font: inherit; }
 .dark-card .project-body > p:not(.project-type) { color: #aaa; }
 .dark-card .tags span { border-color: rgba(242,240,232,.35); }
 .cipher { position: absolute; right: 25px; bottom: 18px; color: var(--acid); font-size: 56px; font-weight: 800; letter-spacing: -.09em; transform: rotate(-8deg); opacity: .9; }
+.dark-link { color: var(--paper); border-color: rgba(242,240,232,.65); }
+.dark-link:hover { color: var(--ink); }
+.website-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+.website-card {
+  position: relative;
+  min-height: 230px;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  background: #f7f5ed;
+  border: 1px solid var(--ink);
+}
+.website-card .project-body { padding: 36px 82px 28px 38px; }
+.website-card .project-body h3 { font-size: 28px; }
+.website-card .circle-link { width: 48px; height: 48px; right: 18px; top: 18px; }
 
 .timeline { border-top: 1px solid var(--ink); }
 .timeline-item {
@@ -494,6 +513,7 @@ footer > p { justify-self: end; color: var(--muted); }
   .project-featured { grid-template-columns: 48px 1fr; }
   .project-featured .project-visual { grid-column: 1 / -1; height: 380px; }
   .project-row { grid-template-columns: 1fr; }
+  .website-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .timeline-item { grid-template-columns: 110px 1fr; padding: 20px 0; }
   .timeline-location { display: none; }
   .education-grid { grid-template-columns: 1fr; }
@@ -524,6 +544,10 @@ footer > p { justify-self: end; color: var(--muted); }
   .compact-card { grid-template-columns: 42px 1fr; }
   .compact-card .project-body { padding: 28px 20px 70px; }
   .compact-card .project-body h3 { font-size: 28px; }
+  .website-grid { grid-template-columns: 1fr; }
+  .website-card { grid-template-columns: 42px 1fr; }
+  .website-card .project-body { padding: 28px 70px 24px 20px; }
+  .website-card .project-body h3 { font-size: 26px; }
   .timeline-item { grid-template-columns: 82px 1fr; }
   .timeline-item h3 { font-size: 18px; }
   .recognition-inner { min-height: 230px; padding: 30px 24px; }
